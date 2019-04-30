@@ -7,7 +7,7 @@ class UserTest < ActiveSupport::TestCase
     @user = users(:one)
   end
 
-  test "should be valid?" do
+  test 'should be valid?' do
     assert @user.valid?
   end
 
@@ -15,6 +15,4 @@ class UserTest < ActiveSupport::TestCase
     user = User.new
     assert !user.save
   end
-
-
 end

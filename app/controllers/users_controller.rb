@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
@@ -8,14 +10,11 @@ class UsersController < ApplicationController
     end
   end
 
-  def show
-  end
+  def show; end
 
-  def destroy
-  end
+  def destroy; end
 
-  def update
-  end
+  def update; end
 
   def user_params
     params.require(:user).permit(:name, :email, :password, :photo, :city)
