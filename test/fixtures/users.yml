@@ -12,7 +12,9 @@ one:
   encrypted_password: <%= User.new.send(:password_digest, '123greetings') %>
 
 
-# column: value
-#
-#two: {}
-# column: value
+# two:
+#   name: Mario
+#   email: mario@example.com
+#   photo: imgurl.com
+#   city: kediri
+#   encrypted_password: <%= User.new.send(:password_digest, '123greetings') %>
